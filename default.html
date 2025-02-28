@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge, chrome=1">
+    <title>Default</title>
+    <style>
+        html {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            display: -webkit-flex;
+            flex-flow: column nowrap;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        body {
+            color: #555;
+            width: 90%;
+            max-width: 1200px;
+        }
+
+        a {
+            color: #555555;
+            text-decoration: none;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            transition: color 0.25s;
+            -moz-transition: color 0.25s;
+            -webkit-transition: color 0.25s;
+            -o-transition: color 0.25s;
+        }
+
+        a:hover {
+            color: #198d44;
+        }
+
+        .note {
+            width: auto;
+            padding: 1em 2em 1em 2em;
+            line-height: 1.7em;
+        }
+
+        @media only screen and (min-width: 801px) {
+            body {
+                margin: 5em 0 0 0;
+            }
+
+            .note {
+                background-color: #ddd;
+            }
+
+            .card {
+                width: 900px;
+                height: auto;
+                display: flex;
+                display: -webkit-flex;
+                flex-flow: row nowrap;
+                justify-content: space-around;
+                align-items: center;
+            }
+
+            .card_text {
+                margin: 30px;
+            }
+        }
+
+        @media only screen and (max-width: 800px) {
+            body {
+                margin: 1em 0 0 0;
+                font-size: 0.8em;
+                padding-bottom: 2em;
+            }
+
+            .note {
+                background-color: #ccc;
+            }
+
+            .card {
+                display: flex;
+                display: -webkit-flex;
+                flex-flow: column nowrap;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .card_cassette {
+                display: flex;
+                display: -webkit-flex;
+                flex-flow: row nowrap;
+                justify-content: space-around;
+                align-items: center;
+            }
+
+            .cassette {
+                width: 40%;
+                padding-left: 2em;
+            }
+
+            .card_text {
+                line-height: 1em;
+                margin: 2em;
+            }
+        }
+
+        .flex_center {
+            display: flex;
+            display: -webkit-flex;
+            flex-flow: row nowrap;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        @media only screen and (min-width: 801px) {
+            .contact_us {
+                padding-left: 100px;
+                display: flex;
+                display: -webkit-flex;
+                flex-flow: row wrap;
+                justify-content: flex-start;
+                align-items: center;
+            }
+
+            .contact_us img {
+                width: 150px;
+            }
+
+            .contact_text {
+                margin-left: 2em;
+            }
+
+            .flex_center {
+                padding: 0;
+                margin: 0;
+            }
+
+            .flex_center img {
+                width: 24px;
+            }
+        }
+
+        @media only screen and (max-width: 800px) {
+            .contact_us {
+                margin-top: 1em;
+                display: flex;
+                display: -webkit-flex;
+                flex-flow: column wrap;
+                justify-content: flex-start;
+                align-items: flex-start;
+                padding-left: 2em;
+            }
+
+            .contact_us img {
+                width: 120px;
+            }
+
+            .contact_text {
+                margin-top: 1em;
+            }
+
+            .flex_center {
+                padding: 0;
+                margin: 0;
+            }
+
+            .flex_center img {
+                width: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="card_cassette">
+            <img class="cassette" src="./image/soft_big_Korobokkuru.png">
+            <div class="card_text">
+                <h3>牧场物语 精灵驿站</h3>
+                <p>发售日期：2005/3/17</p>
+                <p>对应机器：任天堂DS</p>
+                <p>官方网站：<a href="https://www.bokumono.com/series/corosute/" target="_blank">牧場物語 コロボックルステーション</a></p>
+            </div>
+        </div>
+        <div class="card_cassette">
+            <img class="cassette" src="./image/soft_big_Korobokkuru_girl.png">
+            <div class="card_text">
+                <h3>牧场物语 精灵驿站 女孩版</h3>
+                <p>发售日期：2005/12/8</p>
+                <p>对应机器：任天堂DS</p>
+                <p>官方网站：<a href="https://www.bokumono.com/series/corosute_girl/" target="_blank">牧場物語 コロボックルステーション for ガール</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="note">
+        <p>故事发生在「忘忧谷」。<br>
+            主人公一边过着牧场生活，一边救出被传送到异世界的精灵们和女神。<br>
+            使用任天堂DS的触摸屏，用触摸笔触摸动物的身体，可以直观地照顾动物。<br>
+            在双插槽的任天堂DS中插入GBA游戏「牧场物语 矿石镇的伙伴们」的卡带，可以触发新的事件。<br>
+            之后便可以在忘忧谷中，见到矿石镇的居民。
+        </p>
+    </div>
+    <br>
+    <div class="contact_us">
+        <img src="/images/qrcode_for_weixin.jpg">
+        <div class="contact_text">
+            <p>如果您发现任何错误，请通过以下方式向我们反馈。</p>
+            <p class="flex_center"><img src="/icon/weibo-fill.svg"><span style="margin-left:1em;">微博：<a
+                        href="https://weibo.com/mineraltown" target="_blank">@矿石镇</a></span></p>
+            <p class="flex_center"><img src="/icon/wechat-fill.svg"><span style="margin-left:1em;">微信公众号：矿石镇</span>
+            </p>
+            <p class="flex_center"><img src="/icon/mail-fill.svg"><span
+                    style="margin-left:1em;">邮箱：friends@mineraltown.net</span></p>
+        </div>
+    </div>
+</body>
+
+</html>
